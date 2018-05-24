@@ -17,7 +17,7 @@ const convert = (csvpath) => {
 				});
 			}
 			console.log(result.length)
-			callback(null,JSON.stringify(result));
+			callback(null,JSON.stringify(result,null,2));
 		});
 	};
 	const createJSON = (error,data)=>{
